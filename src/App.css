@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    font-family: 'Josefin Slab', serif;
+}
+.App {
+    background-color: #a98c6a;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #efe6d6;
+    min-height: 75vh;
+}
+.bcImage {
+    background-image: url('sandwich.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 25vh;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+}
+
+.recipe-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    width: 50%;
+}
+
+.left-side::before {
+    content: "";
+    border: 1px solid #a1630d;
+    background-color: #a1630d;
+    width: 100%;
+}
+
+h1, .label {
+    text-align: center;
+    color: #a1630d;
+    font-style: italic;
+}
+
+p, li {
+    color: #5f8806;
+    font-size: 18px;
+    margin: 0;
+    padding: 5px;
+}
+
+.heading > p {
+    font-size: 24px;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+li {
+    font-weight: 600;
+}
+
+.right-side {
+    margin: 20px;
+    width: 50%;
+}
+
+.recipe-image {
+    width: 300px;
+    border-radius: 50%;
+}
+
+@media all and (min-width: 360px) and (max-width: 480px) {
+    .recipe-cont {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .recipe-image {
+        width: 150px;
+        border-radius: 50%;
+    }
+    .heading > p {
+        font-size: 20px;
+        padding: 5px 10px;
+    }
+
+}
+
